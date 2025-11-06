@@ -1,0 +1,28 @@
+
+  /* Estética modernasurrealista em tons frios (pequeno CSS só para efeitos estéticos) */
+  :root {
+      --cold1: #0f172a;
+      --cold2: #0ea5a5;
+      --cold3: #1e3a8a;
+  }
+
+  body {
+      background: linear-gradient(120deg, var(--cold1), #071028 60%);
+      color: #e6f7ff;
+  }
+
+  .nav-link {
+      color: #cfeff6 ;
+  }
+
+  .card-surreal {
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+  }

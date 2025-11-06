@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frota Aero - Aeronaves da FAB</title>
+  <!-- Bootstrap 5 CDN -->
+  <link rel="stylesheet" href="bootstrap@5.3.3.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="bootstrap@5.3.3 js"></script>
+</head>
+
+<body>
+  <div class="container-fluid hero position-relative text-light">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Frota Aero</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#carousel">Carrossel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tabela">Tabela</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cartoes">Cartões</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulario">Formulário</a></li>
+            <li class="nav-item"><a class="nav-link" href="#modais">Modais</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container text-center py-5">
+      <h1 class="display-5 fw-bold">Aeronaves da <span class="text-info">Força Aérea Brasileira</span></h1>
+    </div>
+  </div>
+
+  <main class="container my-5">
+    <!-- CARROSSEL -->
+    <section id="carousel" class="mb-5">
+      <h2 class="mb-3">Galeria</h2>
+      <div id="fabCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="midia\a-1am\a-1aamx.jpg" class="d-block w-100" alt="Aeronave 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>A-1am</h5>
+              <p>Atacante de apoio tático — jato sub-sônico.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="midia\f-5em\f-5em(2).jpg" class="d-block w-100" alt="Aeronave 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>F-5EM</h5>
+              <p>Caça leve — manobrabilidade e velocidade.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="midia/kc-390-e-c-390.jpg" class="d-block w-100" alt="Aeronave 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>KC-390 e C-390</h5>
+              <p>Transporte militar tático e reabastecimento aéreo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="midia/frota_A-29.jpg" class="d-block w-100" alt="Aeronave 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>A-29 frota</h5>
+              <p>aeronave de ataque leve e treinamento.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#fabCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fabCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TABELA -->
+    <section id="tabela" class="mb-5">
+      <h2 class="mb-3">Tabela — Principais aeronaves</h2>
+      <div class="table-responsive card-surreal p-3">
+        <table class="table table-dark table-striped table-hover align-middle">
+          <thead>
+            <tr>
+              <th class="vermelho">Aeronave</th>
+              <th>Função</th>
+              <th>Propulsão</th>
+              <th>Armamento típico</th>
+              <th>Comentário aerodinâmico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Embraer A-29 Super Tucano</td>
+              <td>Ataque leve / Treino avançado</td>
+              <td>Turboélice (PT6-like)</td>
+              <td>Metralhadoras/Canhões, foguetes, bombas guiadas</td>
+              <td>Perfil robusto; ótima eficiência em baixas-altitudes.</td>
+            </tr>
+            <tr>
+              <td>AMX A-1</td>
+              <td>Ataque tático / Reconhecimento</td>
+              <td>Motor turbofan / jato</td>
+              <td>Bombas, canhões, pods de foguetes</td>
+              <td>Projeto subsônico com boa estabilidade para ataque.</td>
+            </tr>
+            <tr>
+              <td>Northrop F-5EM Tiger II</td>
+              <td>Caça leve</td>
+              <td>Dois turbofans</td>
+              <td>Mísseis ar-ar, canhões internos</td>
+              <td>Perfil delgado e aerodinâmico — alta razão peso/potência.</td>
+            </tr>
+            <tr>
+              <td>Embraer KC-390 Millennium</td>
+              <td>Transporte / reabastecimento</td>
+              <td>Dois turbofans grandes</td>
+              <td>Capacidade de carga, autodefesa e pods defensivos</td>
+              <td>Fuselagem volumosa, eficiência em cruzeiro sub-sônico.</td>
+            </tr>
+            <tr>
+              <td>Saab Gripen E (F-39)</td>
+              <td>Caça multirole</td>
+              <td>Turbofan de alto empuxo</td>
+              <td>Mísseis ar-ar/terra, bombas guiadas, canhões</td>
+              <td>Projetado para alta manobrabilidade e furtividade reduzida.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section id="cartoes" class="mb-5">
+      <h2 class="mb-3">Cartões — Destaques técnicos</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card card-surreal h-100 p-3">
+            <img src="midia/c-105/c-105(2).jpg" class="card-img-top rounded" alt="A-29">
+            <div class="card-body">
+              <h5 class="card-title text-light">c-105</h5>
+              <p class="card-text text-light">Avião de transporte tático com bimotor turboélice.
+                Podendo pousar e decolar em pistas não preparadas,
+                versatilidade para realizar missões como transporte logístico,
+                evacuação aeromédica e busca e salvamento</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-surreal h-100 p-3">
+            <img src="midia/f-5em/f-5em(2).jpg" class="card-img-top rounded" alt="F-5">
+            <div class="card-body">
+              <h5 class="card-title text-light">F-5EM</h5>
+              <p class="card-text text-light">Tem características aerodinâmicas muito eficientes devido ao seu emprego
+                de superfícies delgadas e baixa resistência parasita.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-surreal h-100 p-3">
+            <img src="midia/f-39e/f-39E.jpg" class="card-img-top rounded" alt="Gripen">
+            <div class="card-body">
+              <h5 class="card-title text-light">F-39</h5>
+              <p class="card-text text-light">Caça moderno multimissão com aviônicos avançados e alta relação
+                empuxo/peso, excelente manobrabilidade e integração de sensores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="formulario" class="mb-5">
+      <h2 class="mb-3">Formulário — Feedback</h2>
+      <div class="card card-surreal p-4">
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="assunto" class="form-label">Assunto</label>
+            <select class="form-select" id="assunto">
+              <option>Informações técnicas</option>
+              <option>Correções</option>
+              <option>Parcerias</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- GRUPO DE BOTOES + MODAIS -->
+    <section id="modais" class="mb-5">
+      <h2 class="mb-3">Grupo de Botões — Modais</h2>
+      <div class="card card-surreal p-4">
+        <div class="btn-group" role="group" aria-label="Grupo de modais">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal1">A-29 —
+            Aerodinâmica</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal2">F-5 —
+            Propulsão</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal3">Gripen —
+            Armamento</button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+            data-bs-target="#modal4">Comparativo</button>
+        </div>
+      </div>
+
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title">A-29 Super Tucano — Aerodinâmica</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p>O A-29 é um turboélice com configuração de asa reta/semipenetrante — ótima sustentação em baixas
+                velocidades e manobrabilidade em operações de apoio próximo. As hélices entregam grande empuxo em baixa
+                altitude, favorecendo decolagens curtas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title">F-5 — Propulsão</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p>O F-5 usa dois turbofans. Turbofans geram empuxo acelerando ar através de um fan e um núcleo de
+                turbina; são eficientes em velocidades subsônicas e supersônicas limitadas, fornecendo boa razão
+                empuxo/peso para combates e manobras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title">Gripen — Armamento</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p>O Gripen embarca mísseis ar-ar de curto e médio alcance, mísseis ar-superfície, bombas guiadas e um
+                canhão interno. Sua suíte de aviônicos integra guiamento de armas e sensores para emprego multimissão.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title">Comparativo — Qual é mais aerodinâmica?</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p>Considerando forma, razão de arrasto e aplicação, o F-5 (e o Gripen, projetado depois) são as aeronaves
+                com melhor aerodinâmica para desempenho em alta velocidade. Em termos prático/geral, o Gripen apresenta
+                conceitos mais modernos que reduzem resistência e melhoram manobrabilidade; entre as aeronaves legadas o
+                F-5 é o mais "aero" de perfil clássico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
